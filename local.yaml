@@ -1,17 +1,12 @@
 
 logging:
-  #outputLevel: "info"
-  #outputStderr: false
-
-  #filePath: "explorer.log"
-  #fileLevel: "warn"
+  outputLevel: "info"
 
 # Chain network configuration
 chain:
-  name: "devnet"
-  genesisTimestamp: 1700540760
+  name: "kurtosis-testnet"
   configPath: "/el-cl-genesis-data/custom_config_data/config.yaml"
-  # displayName: "Ephemery Iteration xy"
+  displayName: "Kurtosis Testnet"
 
 # HTTP Server configuration
 server:
@@ -25,21 +20,23 @@ frontend:
 
   # Name of the site, displayed in the title tag
   siteName: "Dora the Explorer"
-  siteSubtitle: ""
-  
+  siteSubtitle: "Kurtosis Testnet"
+
   # link to EL Explorer
   ethExplorerLink: ""
 
   # file or inventory url to load validator names from
-  validatorNamesYaml: ""
-  validatorNamesInventory: ""
-  
+  validatorNamesYaml: "/validator-ranges/validator-ranges.yaml"
+
 beaconapi:
   # CL Client RPC
-  endpoint: "http://host.docker.internal:4200"
+  endpoints:
 
+    - url: "http://host.docker.internal:4200"
+      name: "cl-1-lighthouse-geth"
+      archive: true
   # local cache for page models
-  localCacheSize: 100 # 100MB
+  localCacheSize: 10 # 10MB
 
   # remote cache for page models
   redisCacheAddr: ""
@@ -48,49 +45,18 @@ beaconapi:
 # indexer keeps track of the latest epochs in memory.
 indexer:
   # max number of epochs to keep in memory
-  inMemoryEpochs: 3
+  inMemoryEpochs: 8
+
+  # number of epochs to wait before storing unfinalized blocks to db
+  cachePersistenceDelay: 8
 
   # disable synchronizing and everything that writes to the db (indexer just maintains local cache)
   disableIndexWriter: false
 
   # number of seconds to wait between each epoch (don't overload CL client)
-  syncEpochCooldown: 2
+  syncEpochCooldown: 1
 
-  # maximum number of parallel validator set requests (might cause high memory usage)
-  maxParallelValidatorSetRequests: 1
-
-
-# blob storage configuration
-blobstore:
-  # persistence mode: none, db, fs, aws
-  persistenceMode: "none"
-  nameTemplate: ""
-  fs:
-    path: ""
-  aws:
-    accessKey: ""
-    secretKey: ""
-    s3Region: "eu-central-1"
-    s3Bucket: ""
-
-# database configuration
 database:
-  engine: "sqlite" # sqlite / pgsql
-
-  # sqlite settings
+  engine: "sqlite"
   sqlite:
-    file: "./explorer-db.sqlite"
-
-  # pgsql settings
-  pgsql:
-    host: "127.0.0.1"
-    port: 5432
-    user: ""
-    password: ""
-    name: ""
-  pgsqlWriter: # optional separate writer connection (used for replication setups)
-    host: ""
-    port: 5432
-    user: ""
-    password: ""
-    name: ""
+    file: "/dora-database.sqlite"
