@@ -4,9 +4,9 @@ logging:
 
 # Chain network configuration
 chain:
-  name: "kurtosis-testnet"
+  name: "endurance-testnet"
   configPath: "/el-cl-genesis-data/custom_config_data/config.yaml"
-  displayName: "Kurtosis Testnet"
+  displayName: "Endurance Devnet"
 
 # HTTP Server configuration
 server:
