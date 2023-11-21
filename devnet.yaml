@@ -36,7 +36,7 @@ frontend:
   
 beaconapi:
   # CL Client RPC
-  endpoint: "http://host.docker.internal:4200"
+  endpoint: "http://88.99.94.109:4200"
 
   # local cache for page models
   localCacheSize: 100 # 100MB
