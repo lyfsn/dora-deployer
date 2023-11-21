@@ -9,7 +9,7 @@ logging:
 # Chain network configuration
 chain:
   name: "devnet"
-  genesisTimestamp: 1700551800
+  genesisTimestamp: 1700551920
   configPath: "/el-cl-genesis-data/custom_config_data/config.yaml"
   # displayName: "Ephemery Iteration xy"
 
