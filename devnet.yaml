@@ -40,6 +40,10 @@ beaconapi:
       name: "cl-2-lighthouse-geth"
       archive: true
 
+    - url: "http://88.99.94.109:4409"
+      name: "cl-3-lighthouse-geth"
+      archive: true
+
   # local cache for page models
   localCacheSize: 10 # 10MB
 
