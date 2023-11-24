@@ -36,7 +36,7 @@ beaconapi:
       name: "cl-1-lighthouse-geth"
       archive: true
 
-    - url: "http://88.99.94.109:4309"
+    - url: "http://88.99.94.109:4300"
       name: "cl-2-lighthouse-geth"
       archive: true
 
