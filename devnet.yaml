@@ -45,11 +45,15 @@ beaconapi:
       archive: true
 
     - url: "http://88.99.94.109:4400"
-      name: "3-erigon-lighthouse"
+      name: "4-erigon-lighthouse"
       archive: true
 
     - url: "http://88.99.94.109:4500"
-      name: "3-erigon-lodestar"
+      name: "5-erigon-lodestar"
+      archive: true
+
+    - url: "http://88.99.94.109:4600"
+      name: "6-nethermind-teku"
       archive: true
 
   # local cache for page models
