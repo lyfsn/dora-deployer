@@ -33,15 +33,23 @@ beaconapi:
   endpoints:
 
     - url: "http://88.99.94.109:4200"
-      name: "cl-1-lighthouse-geth"
+      name: "1-deployer-lighthouse"
       archive: true
 
     - url: "http://88.99.94.109:4300"
-      name: "cl-2-lighthouse-geth"
+      name: "2-geth-lighthouse"
       archive: true
 
     - url: "http://88.99.94.109:4400"
-      name: "cl-3-lighthouse-geth"
+      name: "3-erigon-lighthouse"
+      archive: true
+
+    - url: "http://88.99.94.109:4400"
+      name: "3-erigon-lighthouse"
+      archive: true
+
+    - url: "http://88.99.94.109:4500"
+      name: "3-erigon-lodestar"
       archive: true
 
   # local cache for page models
