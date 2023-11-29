@@ -44,10 +44,6 @@ beaconapi:
       name: "3-erigon-lighthouse"
       archive: true
 
-    - url: "http://88.99.94.109:4400"
-      name: "4-erigon-lighthouse"
-      archive: true
-
     - url: "http://88.99.94.109:4500"
       name: "5-erigon-lodestar"
       archive: true
