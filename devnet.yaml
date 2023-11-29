@@ -56,6 +56,10 @@ beaconapi:
       name: "6-geth-prysm"
       archive: true
 
+    - url: "http://88.99.94.109:4800"
+      name: "7-erigon-nimbus"
+      archive: true
+
   # local cache for page models
   localCacheSize: 10 # 10MB
 
