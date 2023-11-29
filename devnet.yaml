@@ -45,15 +45,15 @@ beaconapi:
       archive: true
 
     - url: "http://88.99.94.109:4500"
-      name: "5-erigon-lodestar"
+      name: "4-erigon-lodestar"
       archive: true
 
     - url: "http://88.99.94.109:4600"
-      name: "6-nethermind-teku"
+      name: "5-nethermind-teku"
       archive: true
 
     - url: "http://88.99.94.109:4700"
-      name: "7-geth-prysm"
+      name: "6-geth-prysm"
       archive: true
 
   # local cache for page models
