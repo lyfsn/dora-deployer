@@ -60,6 +60,10 @@ beaconapi:
       name: "7-erigon-nimbus"
       archive: true
 
+    - url: "http://88.99.94.109:4900"
+      name: "8-erigon-lighthouse-newkeys"
+      archive: true
+
   # local cache for page models
   localCacheSize: 10 # 10MB
 
