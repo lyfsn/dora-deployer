@@ -63,6 +63,10 @@ beaconapi:
     - url: "http://88.99.94.109:4900"
       name: "8-erigon-lighthouse-newkeys"
       archive: true
+    
+    - url: "http://88.99.94.109:5209"
+      name: "9-erigon-prysm"
+      archive: true
 
   # local cache for page models
   localCacheSize: 10 # 10MB
