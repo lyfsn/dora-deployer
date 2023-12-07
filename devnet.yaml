@@ -76,6 +76,10 @@ beaconapi:
       name: "11-erigon-teku"
       archive: true
 
+    - url: "http://88.99.94.109:5509"
+      name: "12-reth-lighthouse"
+      archive: true
+
   # local cache for page models
   localCacheSize: 10 # 10MB
 
