@@ -80,6 +80,14 @@ beaconapi:
       name: "12-reth-lighthouse"
       archive: true
 
+    - url: "http://88.99.94.109:4970"
+      name: "13-reth-nimbus"
+      archive: true
+
+    - url: "http://88.99.94.109:4980"
+      name: "14-reth-lodestar"
+      archive: true
+
   # local cache for page models
   localCacheSize: 10 # 10MB
 
